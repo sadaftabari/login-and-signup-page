@@ -1,0 +1,9 @@
+@import "./var";
+@each $key, $val in $color {
+  .color#{$key} {
+    color: $val !important;
+  }
+  .bg#{$key} {
+    background-color: $val !important;
+  }
+}

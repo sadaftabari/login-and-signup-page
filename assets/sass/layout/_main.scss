@@ -1,0 +1,87 @@
+body {
+  .main {
+    .container {
+      .row {
+        margin: 4rem auto;
+        @media (max-width: 993px) {
+          margin: 2rem auto;
+        }
+        .register {
+          margin: 1.8rem auto !important;
+        }
+        .info-box {
+          padding-left: 120px !important;
+          padding-right: 120px !important;
+          max-width: 100%;
+          @media (max-width: "1200px") {
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+          }
+          form {
+            max-width: 100%;
+
+            .user-validation {
+              min-height: 30px;
+              width: 80%;
+              opacity: 0.7;
+              padding-left: 5px;
+              font-weight: bold;
+              display: block;
+            }
+          }
+
+          input {
+            padding: 10px;
+            border-radius: 8px;
+          }
+          .sign-in {
+            a {
+              border: none !important;
+              &:nth-child(2) {
+                background-color: #fff !important;
+                color: black !important;
+                border: 1px solid rgb(210, 204, 204) !important;
+                svg {
+                  width: 21px;
+                  height: auto;
+                }
+              }
+            }
+          }
+          .forgot {
+            @media (max-width: "992px") {
+              align-items: center;
+              flex-direction: column;
+              gap: 15px !important;
+            }
+          }
+        }
+      }
+      .circle-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @media (max-width: "767px") {
+          display: none !important;
+        }
+
+        .circle {
+          width: 230px;
+          height: 230px;
+
+          border-radius: 50%;
+        }
+        .blur {
+          backdrop-filter: blur(10px);
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          z-index: 9999;
+        }
+      }
+    }
+  }
+}
